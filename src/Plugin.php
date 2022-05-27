@@ -1,5 +1,5 @@
 <?php
-namespace aanimation\bdate;
+namespace aanimation\b-date;
 
 use Craft;
 use craft\base\conditions\BaseCondition;
@@ -43,6 +43,26 @@ class Plugin extends \craft\base\Plugin
     {
         parent::init();
 
-        // Custom initialization code goes here...
+        self::$plugin = $this;
+
+        $this->registerNewFieldsHtml();
+    }
+
+    private function registerNewFieldsHtml()
+    {
+        Craft::$app->view->hook('cp.users.edit.content', function(array &$context) {
+            $context['foo'] = 'bar';
+
+            $field = Cp::dateFieldHtml([
+                'label' => Craft::t('app', 'Birthdate'),
+                'id' => 'bdate',
+                'name' => 'bdate',
+                'value' => '9/16/1994',
+                'errors' => null,
+                'disabled' => false,
+            ]);
+
+            return Html::tag('div', $field, ['id' => 'account', 'class' => 'field']);
+        });
     }
 }
