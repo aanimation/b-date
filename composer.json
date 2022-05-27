@@ -3,13 +3,6 @@
   "description": "B-date is a Craft CMS plugin for add new field into user",
   "type": "craft-plugin",
   "version": "1.0.0",
-  "keywords": [
-    "craft",
-    "cms",
-    "craftcms",
-    "craft-plugin",
-    "craft-b-date"
-  ],
   "license": "MIT",
   "authors": [
     {
@@ -24,12 +17,12 @@
   },
   "autoload": {
     "psr-4": {
-      "aanimation\\bdate\\": "src/"
+      "aanimation\\b-date\\": "src/"
     }
   },
   "extra": {
     "name": "B-date",
-    "handle": "bdate",
+    "handle": "b-date",
     "developer": "Aanimation",
     "developerUrl": "https://github.com/aanimation/",
     "documentationUrl": "https://github.com/aanimation/b-date",
