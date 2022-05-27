@@ -25,7 +25,7 @@
     "handle": "bdate",
     "developer": "Aanimation",
     "developerUrl": "https://github.com/aanimation/",
-    "documentationUrl": "https://github.com/aanimation/b-date",
-    "class": "aanimation\\b-date\\Plugin"
+    "documentationUrl": "https://github.com/aanimation/bdate",
+    "class": "aanimation\\bdate\\Plugin"
   }
 }
