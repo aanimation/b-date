@@ -1,5 +1,5 @@
 <?php
-namespace aanimation\b-date;
+namespace aanimation\bdate;
 
 use Craft;
 use craft\base\conditions\BaseCondition;
