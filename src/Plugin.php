@@ -33,6 +33,12 @@ use yii\base\Event;
 
 class Plugin extends \craft\base\Plugin
 {
+    public static Plugin $plugin;
+
+    public string $schemaVersion = '1.0.0';
+    public bool $hasCpSettings = false;
+    public bool $hasCpSection = false;
+    
     public function init()
     {
         parent::init();
